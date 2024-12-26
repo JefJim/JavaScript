@@ -6,29 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabs</title>
 
-    <link rel="stylesheet" href="Styles/style.css"/>
-    <link rel="stylesheet" href="Styles/tabsStyle.css"/>
+    <link rel="stylesheet" href="styles/tabsStyle.css"/>
 </head>
 
 <body>
     <section>
         <div class="title">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum cumque cupiditate cum aperiam vitae in
-                velit deserunt, totam iste! Esse nemo
-                assumenda veritatis ipsam nesciunt delectus cumque accusamus dicta tempora.</p>
+            <h2>About Me</h2>
+            <p>Knowledge in software development and SQL, software
+                engineer based on quality results and the use of good
+                practices mixed with teamwork and the application of
+                soft skills. I have proven my skills in software
+                development by successfully completing over 30
+                projects at the university level. My passion for
+                technology and my commitment to continuous learning
+                motivate me to seek new opportunities where I can
+                apply my skills and further my professional growth.
+                </p>
         </div>
         <div class="about-center section-center"></div>
-        <article>
-            <img src="../images/test1.jpg" alt="about-picture">
+        <article class="about-img">
+            <img src="../images/PErfil.jpg" alt="about picture">
         </article>
         <article class="about">
             <div class="btn-container">
-                <button class="tab-btn" data-id="history">History</button>
-                <button class="tab-btn" data-id="me">About Me</button>
+                <button class="tab-btn active" data-id="history">History</button>
+                <button class="tab-btn" data-id="me">Goals</button>
                 <button class="tab-btn" data-id="vision">Vision</button>
             </div>
-        </article>
+            <article class="about-content">
+                <div class="content active" id="history">
+                    <h4>History</h4>
+                    <p>I have been interested in technology since I was a child, especially in video games. The desire to learn how to create them inspired me to learn programming, so I am currently studying 
+                        software engineering at the National Technical University.</p>
+                </div>
+    
+                <div class="content" id="me">
+                    <h4>Goals</h4>
+                    
+                    <p>Technical Skills Enhancement: Deepen advanced knowledge of software development and SQL database optimization, applying industry best practices to ensure efficient and scalable solutions.</p>
+                    <p>Contribution to the Technology Community: Actively participate in development communities, sharing knowledge and experiences, and 
+                        contributing to the collective advancement of the technology sector.</p>
+                </div>
+    
+                <div class="content" id="vision">
+                    <h4>Vision</h4>
+                    <p>Continuous Learning: Maintain a proactive attitude towards 
+                        learning and adapting to new emerging technologies and methodologies, ensuring constant evolution in my professional career.
+                    </p>
+                    <p>Teamwork and Effective Communication: Value and promote teamwork, 
+                        developing communication skills that facilitate collaboration and the achievement of common goals in multidisciplinary environments.</p>
+                </div>
+            </article>
+        </article> 
     </section>
     <script src="tabs.js"></script>
 </body>
